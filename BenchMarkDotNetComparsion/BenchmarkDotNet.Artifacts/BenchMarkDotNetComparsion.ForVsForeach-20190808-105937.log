@@ -1,0 +1,272 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85
+// command took 3.11s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85
+// command took 14.77s and exited with 1
+// start dotnet build -c Release  --no-restore --no-dependencies /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85
+// command took 4.91s and exited with 0
+// ***** Done, took 00:00:23 (23.2 sec)   *****
+// Found 2 benchmarks:
+//   ForVsForeach.For: DefaultJob
+//   ForVsForeach.Foreach: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)// **************************
+// Benchmark: ForVsForeach.For: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "4ccba2c5-0905-4689-89dc-fa53dd6c9c85.dll" --benchmarkName "BenchMarkDotNetComparsion.ForVsForeach.For" --job "Default" --benchmarkId 0 in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.6 (CoreCLR 4.6.27817.03, CoreFX 4.6.27818.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 767270.52 ns, 767.2705 us/op
+WorkloadJitting  1: 1 op, 1297504.04 ns, 1.2975 ms/op
+
+OverheadJitting  2: 16 op, 631612.42 ns, 39.4758 us/op
+WorkloadJitting  2: 16 op, 8223360.32 ns, 513.9600 us/op
+
+WorkloadPilot    1: 16 op, 7704796.32 ns, 481.5498 us/op
+WorkloadPilot    2: 32 op, 16039381.69 ns, 501.2307 us/op
+WorkloadPilot    3: 64 op, 31687470.01 ns, 495.1167 us/op
+WorkloadPilot    4: 128 op, 61739020.08 ns, 482.3361 us/op
+WorkloadPilot    5: 256 op, 120195624.81 ns, 469.5142 us/op
+WorkloadPilot    6: 512 op, 236184389.98 ns, 461.2976 us/op
+WorkloadPilot    7: 1024 op, 370318519.37 ns, 361.6392 us/op
+WorkloadPilot    8: 2048 op, 697902186.14 ns, 340.7726 us/op
+
+OverheadWarmup   1: 2048 op, 6564.10 ns, 3.2051 ns/op
+OverheadWarmup   2: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadWarmup   3: 2048 op, 8022.79 ns, 3.9174 ns/op
+OverheadWarmup   4: 2048 op, 8022.79 ns, 3.9174 ns/op
+OverheadWarmup   5: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadWarmup   6: 2048 op, 11304.84 ns, 5.5199 ns/op
+
+OverheadActual   1: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadActual   2: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadActual   3: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadActual   4: 2048 op, 4011.40 ns, 1.9587 ns/op
+OverheadActual   5: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadActual   6: 2048 op, 8387.46 ns, 4.0954 ns/op
+OverheadActual   7: 2048 op, 5105.41 ns, 2.4929 ns/op
+OverheadActual   8: 2048 op, 5105.41 ns, 2.4929 ns/op
+OverheadActual   9: 2048 op, 7658.12 ns, 3.7393 ns/op
+OverheadActual  10: 2048 op, 5105.41 ns, 2.4929 ns/op
+OverheadActual  11: 2048 op, 4740.74 ns, 2.3148 ns/op
+OverheadActual  12: 2048 op, 7293.45 ns, 3.5613 ns/op
+OverheadActual  13: 2048 op, 4740.74 ns, 2.3148 ns/op
+OverheadActual  14: 2048 op, 5105.41 ns, 2.4929 ns/op
+OverheadActual  15: 2048 op, 4740.74 ns, 2.3148 ns/op
+OverheadActual  16: 2048 op, 12763.53 ns, 6.2322 ns/op
+OverheadActual  17: 2048 op, 13857.55 ns, 6.7664 ns/op
+OverheadActual  18: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadActual  19: 2048 op, 4011.40 ns, 1.9587 ns/op
+OverheadActual  20: 2048 op, 8022.79 ns, 3.9174 ns/op
+
+WorkloadWarmup   1: 2048 op, 1007080842.01 ns, 491.7387 us/op
+WorkloadWarmup   2: 2048 op, 425293597.67 ns, 207.6629 us/op
+WorkloadWarmup   3: 2048 op, 408297680.54 ns, 199.3641 us/op
+WorkloadWarmup   4: 2048 op, 1693525753.89 ns, 826.9169 us/op
+WorkloadWarmup   5: 2048 op, 450643427.80 ns, 220.0407 us/op
+WorkloadWarmup   6: 2048 op, 391841843.08 ns, 191.3290 us/op
+WorkloadWarmup   7: 2048 op, 372086086.00 ns, 181.6827 us/op
+WorkloadWarmup   8: 2048 op, 414229075.47 ns, 202.2603 us/op
+WorkloadWarmup   9: 2048 op, 4924537996.67 ns, 2.4046 ms/op
+WorkloadWarmup  10: 2048 op, 474366454.82 ns, 231.6242 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 397567562.84 ns, 194.1248 us/op
+WorkloadActual   2: 2048 op, 379165469.33 ns, 185.1394 us/op
+WorkloadActual   3: 2048 op, 378831429.50 ns, 184.9763 us/op
+WorkloadActual   4: 2048 op, 371478177.28 ns, 181.3858 us/op
+WorkloadActual   5: 2048 op, 381477856.37 ns, 186.2685 us/op
+WorkloadActual   6: 2048 op, 382816203.70 ns, 186.9220 us/op
+WorkloadActual   7: 2048 op, 369027214.76 ns, 180.1891 us/op
+WorkloadActual   8: 2048 op, 368318291.82 ns, 179.8429 us/op
+
+OutOfMemoryException!
+BenchmarkDotNet continues to run additional iterations until desired accuracy level is achieved. It's possible only if the benchmark method doesn't have any side-effects.
+If your benchmark allocates memory and keeps it alive, you are creating a memory leak.
+You should redesign your benchmark and remove the side-effects. You can use `OperationsPerInvoke`, `IterationSetup` and `IterationCleanup` to do that.
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Collections.Generic.List`1.set_Capacity(Int32 value)
+   at System.Collections.Generic.List`1.AddWithResize(T item)
+   at BenchMarkDotNetComparsion.ForVsForeach.For() in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\ForVsForeach.cs:line 25
+   at BenchmarkDotNet.Autogenerated.Runnable_0.WorkloadActionUnroll(Int64 invokeCount) in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85\4ccba2c5-0905-4689-89dc-fa53dd6c9c85.notcs:line 731
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunAuto(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_0.Run(IHost host, String benchmarkName) in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85\4ccba2c5-0905-4689-89dc-fa53dd6c9c85.notcs:line 168
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85\4ccba2c5-0905-4689-89dc-fa53dd6c9c85.notcs:line 49
+// AfterAll
+ExitCode != 0
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// **************************
+// Benchmark: ForVsForeach.Foreach: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "4ccba2c5-0905-4689-89dc-fa53dd6c9c85.dll" --benchmarkName "BenchMarkDotNetComparsion.ForVsForeach.Foreach" --job "Default" --benchmarkId 1 in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85\bin\Release\netcoreapp2.2
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.6 (CoreCLR 4.6.27817.03, CoreFX 4.6.27818.02), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 368683.69 ns, 368.6837 us/op
+WorkloadJitting  1: 1 op, 1020717.76 ns, 1.0207 ms/op
+
+OverheadJitting  2: 16 op, 446358.89 ns, 27.8974 us/op
+WorkloadJitting  2: 16 op, 6664386.25 ns, 416.5241 us/op
+
+WorkloadPilot    1: 16 op, 5969685.52 ns, 373.1053 us/op
+WorkloadPilot    2: 32 op, 12076123.15 ns, 377.3788 us/op
+WorkloadPilot    3: 64 op, 23115118.29 ns, 361.1737 us/op
+WorkloadPilot    4: 128 op, 48606076.61 ns, 379.7350 us/op
+WorkloadPilot    5: 256 op, 98695640.12 ns, 385.5298 us/op
+WorkloadPilot    6: 512 op, 195994220.67 ns, 382.8012 us/op
+WorkloadPilot    7: 1024 op, 365460355.02 ns, 356.8949 us/op
+WorkloadPilot    8: 2048 op, 686002199.70 ns, 334.9620 us/op
+
+OverheadWarmup   1: 2048 op, 5834.76 ns, 2.8490 ns/op
+OverheadWarmup   2: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadWarmup   3: 2048 op, 4740.74 ns, 2.3148 ns/op
+OverheadWarmup   4: 2048 op, 4740.74 ns, 2.3148 ns/op
+OverheadWarmup   5: 2048 op, 6564.10 ns, 3.2051 ns/op
+OverheadWarmup   6: 2048 op, 4740.74 ns, 2.3148 ns/op
+
+OverheadActual   1: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadActual   2: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadActual   3: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadActual   4: 2048 op, 4011.40 ns, 1.9587 ns/op
+OverheadActual   5: 2048 op, 7293.45 ns, 3.5613 ns/op
+OverheadActual   6: 2048 op, 4740.74 ns, 2.3148 ns/op
+OverheadActual   7: 2048 op, 5834.76 ns, 2.8490 ns/op
+OverheadActual   8: 2048 op, 7293.45 ns, 3.5613 ns/op
+OverheadActual   9: 2048 op, 6564.10 ns, 3.2051 ns/op
+OverheadActual  10: 2048 op, 8022.79 ns, 3.9174 ns/op
+OverheadActual  11: 2048 op, 4740.74 ns, 2.3148 ns/op
+OverheadActual  12: 2048 op, 8022.79 ns, 3.9174 ns/op
+OverheadActual  13: 2048 op, 47772.07 ns, 23.3262 ns/op
+OverheadActual  14: 2048 op, 4011.40 ns, 1.9587 ns/op
+OverheadActual  15: 2048 op, 4376.07 ns, 2.1368 ns/op
+OverheadActual  16: 2048 op, 5470.08 ns, 2.6709 ns/op
+OverheadActual  17: 2048 op, 4740.74 ns, 2.3148 ns/op
+OverheadActual  18: 2048 op, 5105.41 ns, 2.4929 ns/op
+OverheadActual  19: 2048 op, 6564.10 ns, 3.2051 ns/op
+OverheadActual  20: 2048 op, 4740.74 ns, 2.3148 ns/op
+
+WorkloadWarmup   1: 2048 op, 956950799.87 ns, 467.2611 us/op
+WorkloadWarmup   2: 2048 op, 360271432.88 ns, 175.9138 us/op
+WorkloadWarmup   3: 2048 op, 353448049.51 ns, 172.5821 us/op
+WorkloadWarmup   4: 2048 op, 1539660665.13 ns, 751.7874 us/op
+WorkloadWarmup   5: 2048 op, 385933422.51 ns, 188.4441 us/op
+WorkloadWarmup   6: 2048 op, 334523015.93 ns, 163.3413 us/op
+WorkloadWarmup   7: 2048 op, 358512618.39 ns, 175.0550 us/op
+WorkloadWarmup   8: 2048 op, 347910865.34 ns, 169.8784 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 2778407242.68 ns, 1.3566 ms/op
+WorkloadActual   2: 2048 op, 409986842.62 ns, 200.1889 us/op
+WorkloadActual   3: 2048 op, 362178304.33 ns, 176.8449 us/op
+WorkloadActual   4: 2048 op, 379914506.23 ns, 185.5051 us/op
+WorkloadActual   5: 2048 op, 377287771.66 ns, 184.2225 us/op
+WorkloadActual   6: 2048 op, 335848235.06 ns, 163.9884 us/op
+WorkloadActual   7: 2048 op, 345723196.22 ns, 168.8102 us/op
+WorkloadActual   8: 2048 op, 345744347.21 ns, 168.8205 us/op
+WorkloadActual   9: 2048 op, 339676929.52 ns, 165.8579 us/op
+WorkloadActual  10: 2048 op, 336205249.24 ns, 164.1627 us/op
+
+OutOfMemoryException!
+BenchmarkDotNet continues to run additional iterations until desired accuracy level is achieved. It's possible only if the benchmark method doesn't have any side-effects.
+If your benchmark allocates memory and keeps it alive, you are creating a memory leak.
+You should redesign your benchmark and remove the side-effects. You can use `OperationsPerInvoke`, `IterationSetup` and `IterationCleanup` to do that.
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Collections.Generic.List`1.set_Capacity(Int32 value)
+   at System.Collections.Generic.List`1.AddWithResize(T item)
+   at BenchMarkDotNetComparsion.ForVsForeach.Foreach() in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\ForVsForeach.cs:line 38
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionUnroll(Int64 invokeCount) in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85\4ccba2c5-0905-4689-89dc-fa53dd6c9c85.notcs:line 1375
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.RunAuto(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineActualStage.Run(Int64 invokeCount, IterationMode iterationMode, Boolean runAuto, Int32 unrollFactor, Boolean forceSpecific)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85\4ccba2c5-0905-4689-89dc-fa53dd6c9c85.notcs:line 812
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\4ccba2c5-0905-4689-89dc-fa53dd6c9c85\4ccba2c5-0905-4689-89dc-fa53dd6c9c85.notcs:line 49
+// AfterAll
+ExitCode != 0
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+Successfully reverted power plan (GUID: 381b4222-f694-41f0-9685-ff5bb260df2e FriendlyName: Balanced)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\BenchMarkDotNetComparsion.ForVsForeach-report.csv
+  BenchmarkDotNet.Artifacts\results\BenchMarkDotNetComparsion.ForVsForeach-report-github.md
+  BenchmarkDotNet.Artifacts\results\BenchMarkDotNetComparsion.ForVsForeach-report.html
+
+// * Detailed results *
+ForVsForeach.For: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+ForVsForeach.Foreach: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.11.5, OS=Windows 10.0.17134.885 (1803/April2018Update/Redstone4)
+Intel Core i7-6600U CPU 2.60GHz (Skylake), 1 CPU, 4 logical and 2 physical cores
+Frequency=2742188 Hz, Resolution=364.6723 ns, Timer=TSC
+.NET Core SDK=2.2.108
+  [Host] : .NET Core 2.2.6 (CoreCLR 4.6.27817.03, CoreFX 4.6.27818.02), 64bit RyuJIT  [AttachedDebugger]
+
+
+|  Method | Mean | Error |
+|-------- |-----:|------:|
+|     For |   NA |    NA |
+| Foreach |   NA |    NA |
+
+Benchmarks with issues:
+  ForVsForeach.For: DefaultJob
+  ForVsForeach.Foreach: DefaultJob
+
+// * Warnings *
+Environment
+  Summary -> Benchmark was executed with attached debugger
+  Summary -> Detected error exit code from one of the benchmarks. It might be caused by following antivirus software:
+        - McAfee Endpoint Security (C:\Program Files (x86)\McAfee\Endpoint Security\Threat Prevention\AMCFG.EXE)
+        - Windows Defender (windowsdefender://)
+Use InProcessToolchain to avoid new process creation.
+
+
+// * Legends *
+  Mean  : Arithmetic mean of all measurements
+  Error : Half of 99.9% confidence interval
+  1 ns  : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:34 (34.89 sec), executed benchmarks: 2
+
+Global total time: 00:00:58 (58.11 sec), executed benchmarks: 2
+// * Artifacts cleanup *

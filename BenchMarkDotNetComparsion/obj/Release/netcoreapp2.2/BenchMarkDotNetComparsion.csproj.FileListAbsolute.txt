@@ -1,0 +1,12 @@
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\BenchMarkDotNetComparsion.deps.json
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\BenchMarkDotNetComparsion.runtimeconfig.json
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\BenchMarkDotNetComparsion.runtimeconfig.dev.json
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\BenchMarkDotNetComparsion.dll
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\bin\Release\netcoreapp2.2\BenchMarkDotNetComparsion.pdb
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\obj\Release\netcoreapp2.2\BenchMarkDotNetComparsion.csprojResolveAssemblyReference.cache
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\obj\Release\netcoreapp2.2\BenchMarkDotNetComparsion.csproj.CoreCompileInputs.cache
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\obj\Release\netcoreapp2.2\BenchMarkDotNetComparsion.AssemblyInfoInputs.cache
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\obj\Release\netcoreapp2.2\BenchMarkDotNetComparsion.AssemblyInfo.cs
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\obj\Release\netcoreapp2.2\BenchMarkDotNetComparsion.dll
+c:\users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\obj\Release\netcoreapp2.2\BenchMarkDotNetComparsion.pdb
+C:\Users\akumar\source\repos\BenchMarkDotNetComparsion\BenchMarkDotNetComparsion\obj\Release\netcoreapp2.2\BenchMarkDotNetComparsion.csprojAssemblyReference.cache
